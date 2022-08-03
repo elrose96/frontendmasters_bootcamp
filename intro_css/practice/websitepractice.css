@@ -1,46 +1,86 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color:#C0C2C9;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 10px;
+}
+
+.mytabs { 
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 600px;
+    margin: 10px auto;
+    padding: 25px;
+}
+
+.mytabs input[type="radio"] {
+    display: none;
+}
+
+.mytabs label {
+    padding: 25px;
+    background: slategray;
+    font-weight: bold;
+}
+
+.mytabs .tab {
+    width: 100%;
+    padding: 20px;
+    background-color: white;
+    order: 1;
+    display: none;
+}
+
+.mytabs .tab h2 {
+    font-size: 3em;
+}
+
+.mytabs input[type='radio']:checked + label + .tab {
+    display: block;
+}
+
+.mytabs input[type='radio']:checked + label {
+    background: white;
 }
 
 .coffeecircle {
-    width: 15%;
-    height: 15%;
-    border: dotted brown;
+display: block;
+margin-left: auto;
+margin-right: auto;
+width: 30%;
+height: 30%;
+border: dotted brown;
 }
 
 .chemex {
-    width: 15%;
-    height: 15%;
+    width: 30%;
+    height: 40%;
 }
 
 .coldbrew {
-    width: 15%;
-    height: 15%;
+    width: 30%;
+    height: 40%;
 }
 
 .aeropress {
-    width: 15%;
-    height: 15%;
+    width: 30%;
+    height: 45%;
 }
 
 h1 {
+    font-size: 30pt;
+    font-weight: bold;
+    font-style: italic;
+    color: brown;
+    background-color: rgb(223, 213, 201);
+}
+h2 {
     font-size: 24pt;
     font-weight: bold;
     font-style: italic;
-    color: brown
-}
-
-h2 {
-    font-size: 18pt;
-    font-weight: bold;
-    font-style: italic;
-    color: brown
-}
-
-h3, h4, h5 {
-        font-size: 16pt;
-        font-weight: bold;
-        font-style: italic;
-        color: brown
+    color: brown;
+    text-align: center;
 }

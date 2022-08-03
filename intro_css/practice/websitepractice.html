@@ -5,10 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="websitepractice.css">
-    <title>Coffee for Days</title>
+    <title>Coffee all Day</title>
 </head>
+
 <body>
-<h1>Coffee Makes the World go 'Round</h1>
+<h1>Coffee all Day</h1>
 <p>Take a look into the wild world of coffee! There are so many different types of coffee and different ways to make coffee.</p>
 
 <img class=coffeecircle src="images/coffeearoundtheworld.jpg" alt="coffee cups in a circle">
@@ -17,29 +18,36 @@
 
 <h2>Coffee Brewing Styles</h2>
 <p>Here are a few different ways I like to brew my coffee:</p>
-<ul>
-    <li>Pour Over</li>
-    <li>Cold Brew</li>
-    <li>Aeropress</li>
-</ul>
 
-<ol>
-<li><h3>Pour Over</h3></li>
+<div class="mytabs">
+    <input type="radio" id="pourover" name="mytabs" checked="checked"> 
+    <label for="pourover">Pour Over</label>
+<div class="tab">
+<h2>Pour Over</h2>
 <p>One of my go-to methods of coffee making is using a Chemex to make pour over coffee.</p>
 <img class=chemex src="images/chemex.jpeg" alt="Chemex coffee maker.">
 <p>In order to use the Chemex, insert a filter and pour hot water on the filter to elminate any papery taste. Pour the water out and then put your grounds in.</p>
 <p>For the best tasting coffee, be sure to pour a small amount of hot water on the grounds to allow them to bloom. Then pour hot water in a circular motion until the filter is filled. Allow the coffee to drip and then repeat the pour one time. Remove the filter and enjoy!</p>
+</div>
 
-<li><h4>Cold Brew</h4></li>
+    <input type="radio" id="coldbrew" name="mytabs"> 
+    <label for="coldbrew">Cold Brew</label>
+<div class="tab">
+<h2>Cold Brew</h2>
 <p>Cold brew is a great option if you are thinking ahead and want a delicious and strong cup of coffee for the next day!</p>
 <img class="coldbrew" src="images/coldbrew.jpg" alt="Cup of coldbrew coffee.">
 <p>I use a french press to make my cold brew, but any large jug or pot will work. Simply add your grounds (about twice as much as your regular brew) and pour cold water over them. Leave the mixture at room temperature for 14-18 hours, chill and enjoy!</p>
+</div>
 
-<li><h5>AeroPress</h5></li>
+    <input type="radio" id="aeropress" name="mytabs"> 
+    <label for="aeropress">AeroPress</label>
+<div class="tab">
+<h2>AeroPress</h2>
 <p>If you are looking for a delicious espresso maker at a low price point, look no further than the Aeropress!</p>
 <img class="aeropress" src="images/aeropress.jpg">
 <p>Writing out the instructions to make the perfect espresso with an aeropress would be too compliated. See the <a href="http://www.aeropress.com/pages/how-it-works" target=_blank>AeroPress</a> website for more details.</p>
-</ol>
+</div>
+</div>
 
 </body>
 </html>
