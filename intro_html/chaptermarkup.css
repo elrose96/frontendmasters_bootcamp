@@ -1,0 +1,48 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #FFDBE1;
+    border: 0rem solid red;
+    line-height: 1.5rem;
+    width: 75rem;
+    margin: 0 auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+h1 {
+    color: #E8C8DD;
+    font-weight: bold;
+    background-color: black;
+    width:fit-content;
+    padding: 1rem;
+    font-style: italic;
+    font-size: 36pt;
+    margin: 0rem auto;
+    border: #FFDBE1 2rem solid;
+}
+
+.oldcamera {
+    max-width: 15rem;
+    max-height: 15rem;
+    float: left;
+    margin-right: 1rem;
+}
+
+.oldcamera:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.quotefloat {
+    float: right;
+    border: #F2F2F2 1rem double;
+    padding: .5rem;
+    background-color: #E2D0E1;
+}
+
+.quotefloat:after {
+    content: "";
+    display: table;
+    clear: both;
+}

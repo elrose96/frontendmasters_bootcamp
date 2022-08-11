@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="contactclover.css" rel="stylesheet">
+    <title>Contact Clover</title>
+</head>
+<body>
+    <div class="wrapper">
+        
+        <section>
+            <h1>Contact Clover</h1>
+            <p>Fill out the form below to contact Clover<p>
+        <form>
+        <fieldset>
+            <legend>Your contact information</legend>
+
+            <label for="name">Full Name</label>
+                <input type="text" id="name" name="name">
+            <label for="phone">Phone number</label>
+                <input type="tel" id="phone" name="phone" placeholder="xxx-xxx-xxxx">
+        </fieldset>
+        <fieldset>
+            <legend>Setting up a playdate</legend> 
+            <label for="date">Requested date</label>
+                <input type="date" id="date" name="date">
+            <label for="qty">How many dogs would you like to bring on the playdate?</label>
+                <input type="number" id="qty" name="qty" min="1" max="5">
+            
+            <label for="timing">What time of day do you prefer to meet?</label>
+            <select id="timing" name="timing">
+                        <option selected> Select one...</option>
+                        <option value="morning">Morning</option>
+                        <option value="midday">Mid-day</option>
+                        <option value="afternoon">Afternoon</option>
+                        <option value="evening">Evening</option>
+                </select>
+                <label for="comments">Special requests:</label>
+                <textarea id="comments" name="comments" placeholder="If you have specific timig needs, please indicate here..."></textarea>
+            
+            <p>Where would you like to meet-up?</p>
+            <label>
+                <input type="radio" name="location" value="apartment" checked> Clovers apartment
+            </label>
+            <label>
+                <input type="radio" name="location" value="park"> The dog park
+            </label>
+            <label>
+                <input type="radio" name="location" value="riverside"> By the river
+            </label>
+            <label for="toytype">Clover loves to play with new toys. What kind of toys can you bring?
+            </label>
+            <label>
+                <input type="checkbox" id="toytype" value="ball" name="toytype"> Rubber balls
+            </label>
+            <label>
+                <input type="checkbox" value="squeeky" name="toytype"> Squeeky toys
+            </label>
+            <label>
+                <input type="checkbox" value="rope" name="toytype"> Tugging ropes
+            </label>
+        </fieldset>
+        <button type="submit">Submit</button>
+        </form>
+        </section>
+    </div>
+</body>
+</html>

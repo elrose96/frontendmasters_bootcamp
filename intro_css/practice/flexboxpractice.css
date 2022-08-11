@@ -1,0 +1,16 @@
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    /* direction and if ithe content will wrap */ 
+    flex-flow: row nowrap;
+    /*where on the page does the content begin*/ 
+    justify-content: space-around;
+
+}
+li {
+    border: 3px solid red;
+        /* make it these dimesnisons, but still fit to page/ content etc. "make it this wide (sort of)*/
+    flex-basis: 10%;
+}

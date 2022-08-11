@@ -1,0 +1,82 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  body {
+      font-family:Arial, Helvetica, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-image:url(../../intro_html/Images/clover.jpeg);
+  }
+
+  .wrapper {
+      width: 50%;
+      margin: 0 auto;
+      padding: 1em;
+      display: flex;
+      flex-flow: row nowrap;
+      font-size: 1rem;
+      background-color: #B79E71;
+  }
+
+  fieldset {
+	border: 1px solid black;
+	border-radius: 10px;
+	margin-bottom: 2rem;
+    width: 800px;
+    }
+    
+    legend {
+        font-weight: bold;
+        font-size: 1.3rem;
+        padding-top: 1.3rem;
+        margin-bottom: 1rem;
+    }
+    
+  p {
+      margin-bottom: 0;
+      margin-top: 2rem;
+  }
+  label {
+    display: block;
+    padding: .5rem;
+  }
+
+  textarea {
+	height: 10rem;
+	padding: 1rem;
+    border: none;
+    border-radius: 10px;
+}
+
+  section {
+      flex-basis: 57%;
+      margin-right: 10%;
+  }
+
+  select {
+	font-size: 1rem;
+}
+
+button {
+	font-size: 1rem;
+	margin: 2rem 0;
+	background-color: #853A25;
+	color: #C1B8A2;
+	border: none;
+	padding: 0.5rem 1rem;
+	border-radius: 10px;
+}
+
+button:hover {
+	background-color:#ABB0A9;
+	color: #853A25;
+}
+
+input {
+    border: none;
+    border-radius: 10px;
+}

@@ -1,1 +1,92 @@
 /* my first css */
+
+/* Id's */
+#myid {
+    color: #002664;
+    font-weight: bold;
+}
+
+body {
+    /* font */
+    font-family: Arial, Helvetica, sans-serif;
+
+    /*background picture*/
+    background: #146CFD url(https://placedog.net/505) no-repeat center;
+
+    /*line height*/
+    line-height: 1.5rem;
+}
+
+img {
+    /*adding a border to the picture*/
+    border: 10px solid #8CE0FF;
+    max-width: 30%;
+    max-height: 30%;
+}
+
+h1 {
+    /*adding a border to the header*/
+    border: 10px double #FAAF05;
+}
+
+blockquote {
+    /* changing the quote font*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* changing the quote style*/
+    font-size: 2rem;
+    font-style: italic;
+    /*center the quote*/
+    text-align: center;
+}
+
+cite {
+    /*changing the citation*/
+    font-size: 1rem;
+}
+
+/* classes allow you to make excepetions to the rule. ie. you want to add a border image to one picture and not the other etc.*/
+.bigbold {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+.fontcolor {
+    color: #F3631B;
+}
+
+/*applies to all properties listed*/
+h2, h3 {
+    font-size: 2rem;
+    font-style: italic;
+}
+
+h3 {
+    border: 5px dotted #002664;
+}
+
+/*styling links*/ 
+/* ul indicates all links in the unordered list - descendant selector*/
+ul a:link {
+    font-weight: bold;
+    text-decoration: none;
+    color:#146CFD;
+    font-size: 2rem;
+    font-style: italic;
+}
+
+a:visited {
+    color: #8CE0FF;
+    font-weight: normal;
+}
+
+a:hover {
+    color: #FAAF05;
+    text-decoration: underline;
+    background-color: white;
+}
+
+/*any a tag with a class of harvard*/
+a.harvard:link {
+    color: maroon; 
+}
+
