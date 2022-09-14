@@ -1,0 +1,71 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    cursor: url(./mole-game/cursor.png), default;
+    background-color: #B3BD6F;
+}
+
+
+
+.wrapper {
+    background-image: url("./mole-game/background.png");
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.worm {
+    width: 1660px;
+}
+
+.worm-container {
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+    border: red dotted 0rem;
+    position: absolute;
+    top: 5px;
+    display: none;
+}
+
+.hole-container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    margin: 0 auto;
+    width: 90%;
+    column-gap: 100px;
+    border: red 0rem dotted;
+}
+
+
+.hole {
+    overflow: visible;
+    border-radius: 50%;
+    background-color: black;
+    width: 267px;
+    height: 267px;
+}
+
+.hole:hover {
+    cursor: url(./mole-game/cursor-worm.png), pointer;
+}
+
+.hungry {
+    display: none;
+}
+
+.win {
+    display: none;
+    margin: 0 auto;
+}
+
+.king {
+    display: none;
+}
+
