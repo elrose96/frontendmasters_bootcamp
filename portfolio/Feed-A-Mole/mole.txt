@@ -1,0 +1,193 @@
+1) Moles show up and dissapear at random intervals 
+- call the moles to appear in their holes
+- set an interval for the hungry moles to randomly appear
+- set a timeout for the moles to change to sad moles after a max of 20 seconds
+- set a timeout for sad moles to change to mole butts after .5 seconds
+- set a timeout for mole butts to dissapear after .5 seconds  
+- if hungry mole is clicked, change to fed mole and set timeout to dissapear after .5 seconds 
+2) make the moles clickable 
+- set a variable for the mole score
+- add an event listener - if hungry mole is clicked add 10 points to the score 
+- if other type of mole is clicked - nothing happens
+- after 10 clicks - switch to win screen 
+- show the worm meter - after a mole is clicked worm meter fills up by 10%
+3) Add royal moles
+- call royal mole to appear after 10 hungry moles
+- if royal mole is clicked, add 20 points to score
+- add royal states for sad, fed, and mole butt
+
+notes:
+/*let count = 0;
+function randomHole() {
+   let showMole = molesHungry[Math.floor(Math.random() * 10)]
+   showMole.style.display = "block"; // set a random hole to have a mole in it
+   
+    molesHungry[Math.floor(Math.random() * 10)].style.display = "none"; // set a random hole to not have a mole in it
+
+    count++;
+    console.log(count);
+
+  if (count == 10) {
+        showMole.src = "./mole-game/king-mole-hungry.png"
+        count = 0
+    } 
+    else { showMole.src = "./mole-game/mole-hungry.png"}
+}
+
+function moveMoles() {
+let timer = setInterval(randomHole, 1000); 
+}
+
+moveMoles() 
+
+for (let i = 0; i < molesHungry.length; i++) {
+    molesHungry[i].addEventListener('click', (event) => {
+        if (molesHungry[i].src === "file:///C:/Users/16788/Documents/elise_coding/frontendmasters_bootcamp/frontendmasters_bootcamp/portfolio/Feed-A-Mole/mole-game/mole-hungry.png") {
+            score += 10;
+        } 
+        else {score += 20;}  
+    molesHungry[i].style.display="none";
+    wormContainer.style.display = "block";
+    wormContainer.style.width = `${score}%`;
+    console.log (`the score is ${score}`)
+    if (score >= 100) {
+        document.getElementById("wrapper").remove("wrapper")
+        document.getElementById("win").style.display = "block";
+    }
+});
+}*/
+
+/*let moles = [
+{
+    hole: document.getElementById('hole-1'),
+    state: "hungry", 
+    king: true,
+},
+{
+    hole: document.getElementById("hole-2"),
+    state: "hungry", 
+    king: true,
+},
+{
+    hole: document.getElementById("hole-3"),
+    state: "hungry", 
+    king: true,
+},
+{
+    hole: document.getElementById("hole-4"),
+    state: "hungry", 
+    king: true,
+},
+{
+    hole: document.getElementById("hole-5"),
+    state: "hungry", 
+    king: true,
+},
+{
+    hole: document.getElementById("hole-6"),
+    state: "hungry", 
+    king: true,
+},
+{
+    hole: document.getElementById("hole-7"),
+    state: "hungry", 
+    king: true, 
+},
+{
+    hole: document.getElementById("hole-8"),
+    state: "hungry", 
+    king: true, 
+},
+{
+    hole: document.getElementById("hole-9"),
+    state: "hungry", 
+    king: true,
+},
+{
+    hole: document.getElementById("hole-10"),
+    state: "hungry", 
+    king: true,
+},
+]
+let holes = moles.map(function (moles) {
+    return moles.hole;
+});
+let randomMole = holes[Math.floor(Math.random() * 10)].getElementsByClassName('mole')
+console.log(randomMole)
+console.log(molesHungry)
+*/
+
+
+
+// molesHungry[Math.floor(Math.random() * 10)].src = "./mole-game/king-mole-hungry.png"
+/*
+const moleHungry = document.getElementsByClassName('hungry');
+let randomNumber = Math.floor(Math.random() * 10)
+let timer = setInterval(hide, 2000); 
+let timerTwo = setInterval(show, 4000);
+
+function hide() {
+molesHungry.forEach(function() {
+    molesHungry[randomNumber].style.display = "none"; 
+})
+}
+
+function show() {
+molesHungry.forEach(function(element, index) {
+    molesHungry[randomNumber].style.display = "block"; 
+})
+}*/
+
+
+/*function hide() {
+    for (let i = moleHungry.length-1; i >= 0; i--) {
+        moleHungry[i].style.display = "none"; 
+        }
+    }
+
+let timer = setInterval(hide, 2000); 
+let timerTwo = setInterval(show, 4000);
+
+function show() {
+    for (let i = 0; i < 10; i++) {
+        moleHungry[i].style.display = "block";
+        }
+    }
+
+
+const clear = () => {
+    clearInterval(timerTwo);
+}
+
+const click = document.addEventListener('click', clear);*/
+
+
+/*for (let i = moleHungry.length-1; i >= 0; i--) {
+    //if (i === 10) break;
+    setInterval(function() {
+        moleHungry[i].style.display = "none";
+         if(i = 0) {
+             setInterval(1000)
+            } 
+   }, i * 1000)
+};*/
+
+
+//function getRandomNumber() {
+//return Math.floor(Math.random() * moleHungry.length + 1);
+//}
+
+//document.addEventListener('click', function() {
+    //document.getElementById("hole-1").style.display = "block";
+//});
+
+// function to get a list of random numbers representing the length of the mole-hungry class list
+//function getRandomNumber() {
+//return Math.floor(Math.random() * moleHungry.length)
+// }
+
+
+//How much time has lapsed since 1/1/1970
+//Date.now()
+//then = Date.now()
+//Date.now() - then --> the amount of time lapsed since Date.now() was called
