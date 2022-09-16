@@ -69,3 +69,7 @@ body {
     display: none;
 }
 
+.mole {
+    position: relative;
+    right: 30px;
+}
